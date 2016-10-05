@@ -129,16 +129,32 @@ int main(void){
 	   	 	   	}
 	   	 	   }
 	   	 	   	if (encendido==1){
-	   	 	   		digitalWrite(LED3,ON);
+	   	 	   		digitalWrite(LEDG,ON);
 	   	 	   		encendido=0;
 	   	 	   	}
 	   	 	   	if (encendido==2){
-	   	 	   		digitalWrite(LED3,OFF);
+	   	 	   		digitalWrite(LEDG,OFF);
 	   	 	   	}
 	   	 	    if (encendido>=3){
-	   	 	    	digitalWrite(LED3,OFF);
+	   	 	    	digitalWrite(LEDG,OFF);
 	   	 	    }
-    }
+
+	   	 	 if(digitalRead(TEC4)==OFF){
+	   	 		   	  encendido++;
+	   	 		   	while(digitalRead(TEC4)==OFF){
+	   	 		   	}
+	   	 		   }
+	   	 		   	if (encendido==1){
+	   	 		   		digitalWrite(LED1,ON);
+	   	 		   		encendido=0;
+	   	 		   	}
+	   	 		   	if (encendido==2){
+	   	 		   		digitalWrite(LED1,OFF);
+	   	 		   	}
+	   	 		    if (encendido>=3){
+	   	 		    	digitalWrite(LED1,OFF);
+	   	 		    }
+         }
 
    /* NO DEBE LLEGAR NUNCA AQUI, debido a que a este programa no es llamado
       por ningun S.O. */
