@@ -91,74 +91,74 @@ int main(void){
    while(1) {
        int encendido;
 
-      if(digitalRead(TEC1)==OFF){
-           encendido++;
-         while(digitalRead(TEC1)==OFF){
-         }
-      }
-         if (encendido==1){
-            digitalWrite(LED1,ON);
-            encendido=0;
-         }
-         if (encendido==2){
-            digitalWrite(LED1,OFF);
-         }
-       if (encendido>=3){
-          digitalWrite(LED1,OFF);
-       }
+	   if(digitalRead(TEC1)==OFF){
+	   	  encendido++;
+	   	while(digitalRead(TEC1)==OFF){
+	   	}
+	   }
+	   	if (encendido==1){
+	   		digitalWrite(LED1,ON);
+	   		encendido=0;
+	   	}
+	   	if (encendido==2){
+	   		digitalWrite(LED1,OFF);
+	   	}
+	    if (encendido>=3){
+	    	digitalWrite(LED1,OFF);
+	    }
 
-       if(digitalRead(TEC2)==OFF){
-                 encendido++;
-               while(digitalRead(TEC2)==OFF){
-               }
-            }
-               if (encendido==1){
-                  digitalWrite(LED2,ON);
-                  encendido=0;
-               }
-               if (encendido==2){
-                  digitalWrite(LED2,OFF);
-               }
-             if (encendido>=3){
-                digitalWrite(LED2,OFF);
-             }
+	    if(digitalRead(TEC2)==OFF){
+	   	   	  encendido++;
+	   	   	while(digitalRead(TEC2)==OFF){
+	   	   	}
+	   	   }
+	   	   	if (encendido==1){
+	   	   		digitalWrite(LED2,ON);
+	   	   		encendido=0;
+	   	   	}
+	   	   	if (encendido==2){
+	   	   		digitalWrite(LED2,OFF);
+	   	   	}
+	   	    if (encendido>=3){
+	   	    	digitalWrite(LED2,OFF);
+	   	    }
 
-          if(digitalRead(TEC3)==OFF){
-                     encendido++;
-                   while(digitalRead(TEC3)==OFF){
-                   }
-                }
-                   if (encendido==1){
-                      digitalWrite(LED3,ON);
-                      encendido=0;
-                   }
-                   if (encendido==2){
-                      digitalWrite(LED3,OFF);
-                   }
-                 if (encendido>=3){
-                    digitalWrite(LED3,OFF);
-                 }
+	   	 if(digitalRead(TEC3)==OFF){
+	   	 	   	  encendido++;
+	   	 	   	while(digitalRead(TEC3)==OFF){
+	   	 	   	}
+	   	 	   }
+	   	 	   	if (encendido==1){
+	   	 	   		digitalWrite(LEDG,ON);
+	   	 	   		encendido=0;
+	   	 	   	}
+	   	 	   	if (encendido==2){
+	   	 	   		digitalWrite(LEDG,OFF);
+	   	 	   	}
+	   	 	    if (encendido>=3){
+	   	 	    	digitalWrite(LEDG,OFF);
+	   	 	    }
 
-              if(digitalRead(TEC4)==OFF){
-                        encendido++;
-                      while(digitalRead(TEC4)==OFF){
-                      }
-                   }
-                      if (encendido==1){
-                         digitalWrite(LEDR,ON);
-                         encendido=0;
-                      }
-                      if (encendido==2){
-                         digitalWrite(LEDR,OFF);
-                      }
-                    if (encendido>=3){
-                       digitalWrite(LEDR,OFF);
-                    }
+	   	 	 if(digitalRead(TEC4)==OFF){
+	   	 		   	  encendido++;
+	   	 		   	while(digitalRead(TEC4)==OFF){
+	   	 		   	}
+	   	 		   }
+	   	 		   	if (encendido==1){
+	   	 		   		digitalWrite(LED1,ON);
+	   	 		   		encendido=0;
+	   	 		   	}
+	   	 		   	if (encendido==2){
+	   	 		   		digitalWrite(LED1,OFF);
+	   	 		   	}
+	   	 		    if (encendido>=3){
+	   	 		    	digitalWrite(LED1,OFF);
+	   	 		    }
          }
 
    /* NO DEBE LLEGAR NUNCA AQUI, debido a que a este programa no es llamado
       por ningun S.O. */
-   return 0 ;
+	return 0 ;
 }
 
 /*==================[end of file]============================================*/
